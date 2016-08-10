@@ -1,2 +1,2 @@
-# spring-cloud-demo
-Spring Cloud Demo
+# Spring Cloud Demo
+This is Spring Cloud Demo application
