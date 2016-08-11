@@ -23,7 +23,6 @@ This is Spring Cloud Demo application
     -DEUREKA_SERVER_URL=http://test-eureka:test-password@localhost:8761/eureka  -DAPP_PORT=8888 -DMANGEMENT_PORT=9888  -DSTATIC_RESOURCE_LOCATION="file:///<STATIC_LOCATION_URL>/"
     
 
-
 ## UI Build
    
 ### Install Node, NPM, Bower, Gulp
@@ -37,3 +36,8 @@ This is Spring Cloud Demo application
 ### Build UI Application
   
     validate -Pbuild -Dbuild="debug-deploy --targetFolder \"C:/Users/sneha/Desktop/STATIC_CONTENT/resources\" "
+    
+    
+## References
+### http://www.javaworld.com/article/2927920/cloud-computing/build-self-healing-distributed-systems-with-spring-cloud.html
+### Hystrix Configuaration: https://github.com/Netflix/Hystrix/wiki/Configuration#intro
