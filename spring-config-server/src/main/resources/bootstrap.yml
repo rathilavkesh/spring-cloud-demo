@@ -1,0 +1,49 @@
+server:
+  port: ${APP_PORT:8888}
+  
+spring:
+  application:
+    name: lavkesh-config-server 
+  cloud:
+    bus:
+      destination: test-bus
+    config:
+      server:
+        git:
+          uri: ${CONFIG_SERVER_GIT_URI}
+          username: ${GIT_URI_USERNAME}
+          password: ${GIT_URI_PASSWORD}
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: lavkesh-mq
+    password: rabbitmq@123
+
+encrypt:
+  key: 36E2D4954B9F6EFB2BC397D1D3CBD
+  
+eureka:
+  client:
+    registry-fetch-interval-seconds: 20
+    serviceUrl:
+      defaultZone: ${EUREKA_SERVER_URL:http://localhost:8761}/eureka/
+  instance:
+    preferIpAddress: true
+    lease-renewal-interval-in-seconds: 20
+    
+management:
+  context-path: /manage
+  port: ${MANGEMENT_PORT:9080}
+
+endpoints:
+  enabled: false
+  sensitive: true
+    
+    
+
+    
+    
+    
+  
+  
+            

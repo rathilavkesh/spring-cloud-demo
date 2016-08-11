@@ -1,0 +1,125 @@
+$icon-font-path: "../../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
+// bower:scss
+@import "../../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+
+body {
+  margin: 0 auto;
+  max-width: 732px;
+  min-height: 750px;
+  padding: 0px;
+}
+
+.navlink, .navlink:visited{
+  color: #666;
+  font-size: 9px;
+  line-height: 12px;
+  text-decoration: none;
+}
+
+a.underline{
+  text-decoration: none;
+}
+
+a.underline:hover{
+  text-decoration: underline;
+}
+
+.ls_navbar{
+  background-color: #f7f7f7;
+  border: 1px solid #ccc;
+}
+
+.ls_navbar > div{
+  padding-top:5px;
+  padding-bottom:5px;
+  text-align:center;
+}
+
+.navText{
+  text-transform: uppercase;
+}
+
+.padding0{padding:0px;}
+.padding5{padding:5px;}
+.padding10{padding:10px;}
+
+.paddingTop0{padding-top:0px;}
+.paddingTop5{padding-top:5px;}
+.paddingTop10{padding-top:10px;}
+
+.paddingBottom0{padding-bottom:0px;}
+.paddingBottom5{padding-bottom:5px;}
+.paddingBottom10{padding-bottom:10px;}
+.paddingBottom20{padding-bottom:20px;}
+
+.paddingLeft0{padding-left:0px;}
+.paddingLeft5{padding-left:5px;}
+.paddingLeft10{padding-left:10px;}
+
+.paddingRight0{padding-right:0px;}
+.paddingRight5{padding-right:5px;}
+.paddingRight10{padding-right:10px;}
+.paddingRight20{padding-right:20px;}
+
+.smallDropDown{
+  color: #666; 
+  font-size: 9px;
+  text-decoration: none;
+  width: 130px;
+}
+
+.dropDownWhite{
+  background-color: White;
+  border: White;
+}
+
+.ls_small_gray_font{
+  font-size: 9px;
+  color: #666; 
+}
+
+.formBtnParent{
+  font-size: 11px
+}
+
+.formBtn{
+  color: #3b73b9;
+  background-color: #f7f7f7;
+  font-weight: 700;
+  border: 1px solid #ccc;
+  font-size: 95%;
+  height: 15px;
+}
+
+.height20FirstAllChild > div{height:20px;}
+
+.font11{font-size: 11px}
+
+.pageLink, .pageLink:hover, .pageLink:visited, .pageLink:focus{
+  color: #3b73b9;
+  text-decoration: underline;
+  font-size:12px;
+  font-weight: bold;
+}
+
+.pageInfoText{
+  color: #666;
+    font-size: 11px;
+}
+
+.forgotPasswordLink, .forgotPasswordLink:hover, .forgotPasswordLink:visited{
+  color: #666; 
+  font-size: 13px;
+  text-decoration: underline;
+}
+
+.borderGrayTop1{border-top:1px solid #666;}
+
+.marginBottom5 { margin-bottom:5px;}
+
+.imageCss{width:100%; height:100%}
+
+.overflowInherit{overflow:inherit;}

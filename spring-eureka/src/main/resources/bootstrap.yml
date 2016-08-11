@@ -1,0 +1,21 @@
+server:
+  port: ${APP_PORT:8762}
+  context-path: /eureka
+
+spring:
+  application:
+    name: eureka
+
+eureka:
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+  server:
+    waitTimeInMsWhenSyncEmpty: 0
+    
+security:
+  basic:
+    enabled: true
+  user:
+    name: test-eureka
+    password: test-password

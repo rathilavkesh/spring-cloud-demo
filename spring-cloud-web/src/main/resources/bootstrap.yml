@@ -1,0 +1,46 @@
+server:
+  port: ${APP_PORT:8080}
+  context-path: /springCloud
+  
+#Spring resource config
+spring:
+  application:
+    name: Cloud-Web
+  cloud:
+    bus:
+      destination: test-bus
+    config:
+      name: foo
+      discovery:
+        service-id: lavkesh-config-server
+        enabled: true
+      label: ${CONFIG_LABEL:master}
+  resources:
+    chain:
+      cache: false
+    static-locations: ${STATIC_RESOURCE_LOCATION}
+
+#Eureka config
+eureka:
+  client:
+    registry-fetch-interval-seconds: 10
+    serviceUrl:
+      defaultZone: ${EUREKA_SERVER_URL:http://localhost:8761}/eureka/
+  instance:
+    preferIpAddress: true
+    lease-renewal-interval-in-seconds: 10
+
+#Loging config    
+logging:
+  level:
+    org:
+      springframework:
+        web: DEBUG
+
+management:
+  context-path: /manage
+  port: ${MANGEMENT_PORT:9080}
+
+endpoints:
+  enabled: false
+  sensitive: true        

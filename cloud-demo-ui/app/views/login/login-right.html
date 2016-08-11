@@ -1,0 +1,46 @@
+<form name="loginForm"  novalidate>
+	<div layout="column"       layout-align="start stretch" ng-controller="LoginCtrl as vm">
+
+		<div layout="row"  layout-align="end start" class="height20FirstAllChild">
+			<div class="pageInfoText">Username:&nbsp;&nbsp;</div>
+			<div><input type="TEXT" name="loginForm" ng-model="vm.loginForm.username" required=""></div>
+		</div>
+
+		<div layout="row"  layout-align="end start" class="height20FirstAllChild paddingBottom10">
+			<div class="pageInfoText">Password:&nbsp;&nbsp;</div>
+			<div><input type="PASSWORD" name="password" ng-model="vm.loginForm.password" required=""></div>
+		</div>
+
+		<div uib-alert layout="column" layout-align="center center" class="paddingTop5 paddingBottom5 marginBottom5 alert-danger" ng-show="(loginForm.$submitted && loginForm.$invalid) || vm.errorMessage" >
+			<div ng-show="loginForm.loginForm.$error.required">Username is empty.</div>
+			<div ng-show="loginForm.password.$error.required">Password is empty.</div>
+			<div ng-show="vm.errorMessage">{{vm.errorMessage}}</div>
+		</div>
+
+		<div uib-alert layout="column" layout-align="center center" class="height20FirstAllChild paddingTop5 paddingBottom5 marginBottom5 alert-success" ng-show="vm.success">
+			<div>{{vm.loginForm.username}} is authenticate successfully.</div>
+		</div>
+
+		<div layout="column" layout-align="center end" class="height20FirstAllChild paddingBottom10">
+			<div class="formBtnParent">
+				<button ng-click="vm.validateForm($event, loginForm)" class="formBtn" name="Login">Login</button>
+			</div>
+			
+			<div>
+				<a href="javascript:void(0)" class="forgotPasswordLink">Forgot your password</a>
+			</div>
+		</div>
+
+		<div layout="row" layout-align="center center" class="height20FirstAllChild paddingBottom10">
+			<div class="paddingRight5 formBtnParent">
+				<button class="formBtn" name="Register">Register</button>
+			</div>
+			
+			<div class="formBtnParent">
+				<button class="formBtn" name="Help">Help</button>
+			</div>
+		</div>
+
+
+	</div>
+</form>

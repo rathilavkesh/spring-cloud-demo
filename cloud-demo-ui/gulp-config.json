@@ -1,0 +1,87 @@
+{
+
+	"bases" : {
+		 "angularModule" : "springCloudApp",
+		 "applicationPath" : "springCloud",
+		 "src": "app/",
+		 "appBuild": "build/",
+		 "distTemp": "build/distTemp/",		 
+		 "dist": "build/dist/",
+		 "tempFolder" : "build/tempFolder/",
+		 "reportFolder" : "build/report/",
+		 "bower_components" : "bower_components/",
+		 "public" : "public",
+		 "partial" : "partial",
+		 "jsPath" : "js",
+		 "cssPath" : "css",
+		 "sep" : "/"
+	},
+	
+	"paths" : {
+		"appScripts": "**/*.js",
+		"appScriptOrder": ["**/*App.js", "**/*config.js", "**/*constant.js", "**/*Provider.js", "**/*Service.js", "**/*Factory.js", "**/*.js"],
+		"appStyles": "**/*.css",
+		
+		"libMinScript": [
+		           "**/angular.min.js",		            
+		            "**/angular-route.min.js",
+		            "**/angular-cookies.min.js",
+		            "**/angular-aria.min.js",	
+		            "**/angular-animate.min.js",
+		            "**/angular-touch.min.js",
+		            "**/ui-bootstrap-tpls.min.js",
+		            "**/angular-resource.min.js",		            
+		            "**/angular-translate.min.js",
+		            "**/angular-translate-handler-log.min.js",
+		            "**/angular-translate-loader-static-files.min.js",
+		            "**/angular-translate-storage-cookie.min.js",
+		            "**/angular-translate-storage-local.min.js",
+		            "**/dist/tmhDynamicLocale.min.js",
+		            "**/angular-material.min.js",
+		            "**/angular-material-icons.min.js",
+		            "**/angular-messages.min.js",
+		            "**/angular-sanitize.min.js"
+		           ],
+
+		"libScript": [
+					"**/angular.js",		            
+		            "**/angular-route.js",
+		            "**/angular-cookies.js",
+		            "**/angular-aria.js",	
+		            "**/angular-animate.js",
+		            "**/angular-touch.js",
+		            "**/ui-bootstrap-tpls.js",
+		            "**/angular-resource.js",		            
+		            "**/angular-translate.js",
+		            "**/angular-translate-handler-log.js",
+		            "**/angular-translate-loader-static-files.js",
+		            "**/angular-translate-storage-cookie.js",
+		            "**/angular-translate-storage-local.js",
+		            "**/dist/tmhDynamicLocale.js",
+		            "**/angular-material.js",
+		            "**/angular-material-icons.js",
+		            "**/angular-messages.js",
+		            "**/angular-sanitize.js"
+		           ],
+		           
+		"libMinStyles": [
+					"**/angular-material.min.css",
+					"**/angular-material-icons.min.css",
+		            "**/dist/**/bootstrap.min.css"
+		           ],
+		"libStyles": [
+					"**/angular-material.css",
+					"**/angular-material-icons.min.css",
+		            "**/dist/**/bootstrap.css"
+		           ],
+		
+		"html": ["**/index.html", "**/404.html"],
+	    "partialHtml" : ["!**/index.html", "!**/404.html", "**/*.html"],
+		"copyImages": ["images/**/*.png","images/**/*.jpg","images/**/*.gif"],
+
+
+		"bowerFolderCopyFiles" : ["angular-ui-grid/ui-grid.ttf", "angular-ui-grid/ui-grid.woff"],
+		"boweri18CopyFiles": "angular-i18n/*",
+		"i18ResourcesJson" : "resources/*"
+	}
+}

@@ -1,0 +1,19 @@
+target/**
+*.jar
+*.war
+*.ear
+*.class
+*.log
+
+# eclipse specific git ignore
+bin/**
+.classpath
+.project
+.metadata
+.settings/
+.loadpath
+.mvn/
+
+
+/.springBeans
+/Users/
