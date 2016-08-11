@@ -35,7 +35,7 @@ This is Spring Cloud Demo application
   
 ### Build UI Application
   
-    validate -Pbuild -Dbuild="debug-deploy --targetFolder \"C:/Users/sneha/Desktop/STATIC_CONTENT/resources\" "
+    validate -Pbuild -Dbuild="debug-deploy --targetFolder \"<STATIC_LOCATION_URL>\" "
     
     
 ## References
