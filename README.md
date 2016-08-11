@@ -8,7 +8,7 @@ This is Spring Cloud Demo application
        
 ### Config Server
       
-   > -DCONFIG_SERVER_GIT_URI=<CONFIG_SERVER_URL>   -DGIT_URI_USERNAME=   -DGIT_URI_PASSWORD= -DEUREKA_SERVER_URL=http://test-eureka:test-password@localhost:8761/eureka  -DAPP_PORT=8084 -DMANGEMENT_PORT=9084
+   > -DCONFIG_SERVER_GIT_URI=\<CONFIG_SERVER_URL\>   -DGIT_URI_USERNAME=\<CONFIG_SERVER_USERNAME\>   -DGIT_URI_PASSWORD=\<CONFIG_SERVER_PASSWORD\> -DEUREKA_SERVER_URL=http://test-eureka:test-password@localhost:8761/eureka  -DAPP_PORT=8084 -DMANGEMENT_PORT=9084
        
 ### Security Service
       
@@ -20,7 +20,7 @@ This is Spring Cloud Demo application
        
 ### Web Server
       
-   > -DEUREKA_SERVER_URL=http://test-eureka:test-password@localhost:8761/eureka  -DAPP_PORT=8888 -DMANGEMENT_PORT=9888  -DSTATIC_RESOURCE_LOCATION="file:///<STATIC_LOCATION_URL>/"
+   > -DEUREKA_SERVER_URL=http://test-eureka:test-password@localhost:8761/eureka  -DAPP_PORT=8888 -DMANGEMENT_PORT=9888  -DSTATIC_RESOURCE_LOCATION="file:///\<STATIC_LOCATION_URL\>/"
     
 
 ## UI Build
@@ -35,7 +35,7 @@ This is Spring Cloud Demo application
   
 ### Build UI Application
   
-   > validate -Pbuild -Dbuild="debug-deploy --targetFolder \"<STATIC_LOCATION_URL>\" "
+   > validate -Pbuild -Dbuild="debug-deploy --targetFolder \"\<STATIC_LOCATION_URL\>\" "
     
     
 ## References
