@@ -16,8 +16,8 @@ spring:
   rabbitmq:
     host: localhost
     port: 5672
-    username: lavkesh-mq
-    password: rabbitmq@123
+    username: lavkesh
+    password: lavkesh@123
 
 encrypt:
   key: 36E2D4954B9F6EFB2BC397D1D3CBD
