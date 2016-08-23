@@ -2,6 +2,17 @@
 
 This is Spring Cloud Demo application
 
+## Prerequisite
+ 
+  1. Install RabbitMQ from https://www.rabbitmq.com/
+  2. Once RabbitMQ install. Enable rabbitmq management panel.<Br/>
+      https://www.rabbitmq.com/management.html
+  3. Add test user into it using Admin panel. <BR/>
+      https://www.rabbitmq.com/management.html
+  4. Install Docker Toolbox <BR/> https://www.docker.com/products/docker-toolbox
+
+## How to Setup
+
 ### Eureka Server
       
    > -DAPP_PORT=8761
