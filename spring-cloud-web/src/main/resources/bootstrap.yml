@@ -15,6 +15,9 @@ spring:
         service-id: lavkesh-config-server
         enabled: true
       label: ${CONFIG_LABEL:master}
+  rabbitmq:
+    username: root
+    password: password
   resources:
     chain:
       cache: false

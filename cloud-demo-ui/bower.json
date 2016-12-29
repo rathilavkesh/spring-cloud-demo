@@ -1,6 +1,6 @@
 {
-  "name": "leasing-source-ui",
-  "description": "",
+  "name": "cloud-ui",
+  "description": "This is my cloud UI",
   "main": "index.js",
   "license": "ISC",
   "homepage": "",

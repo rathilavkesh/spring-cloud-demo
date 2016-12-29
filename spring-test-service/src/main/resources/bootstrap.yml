@@ -13,7 +13,10 @@ spring:
         service-id: lavkesh-config-server
         enabled: true
       label: ${CONFIG_LABEL:master}
-      
+  rabbitmq:
+    username: root
+    password: password
+          
 eureka:
   client:
     registry-fetch-interval-seconds: 10
