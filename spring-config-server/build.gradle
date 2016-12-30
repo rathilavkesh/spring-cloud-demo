@@ -5,7 +5,7 @@ buildscript {
 	repositories {
 		mavenCentral()
 	}	
-    dependencies {
+    dependencies {        
         classpath "org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}"
     }
 }
@@ -23,8 +23,8 @@ dependencyManagement {
 }
 
 jar {
-    baseName = 'spring-eureka'
-    version =  '0.0.1'
+    baseName = 'spring-config-server'
+    version =  '0.0.1'    
 }
 
 repositories {
@@ -35,9 +35,9 @@ sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
 dependencies {
-    compile 'org.springframework.cloud:spring-cloud-starter-eureka-server'
-    compile 'org.springframework.boot:spring-boot-starter-security'   
-    compile 'org.springframework.cloud:spring-cloud-starter-hystrix-dashboard' 
+    compile 'org.springframework.cloud:spring-cloud-config-server'
+    compile 'org.springframework.cloud:spring-cloud-starter-eureka'
+    compile 'org.springframework.cloud:spring-cloud-starter-bus-amqp'
     testCompile("org.springframework.boot:spring-boot-starter-test") {
         exclude module: "commons-logging"
     }

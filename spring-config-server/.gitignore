@@ -6,13 +6,14 @@ target/**
 *.log
 
 # eclipse specific git ignore
-bin/**
 .classpath
 .project
 .metadata
 .settings/
 .loadpath
 .mvn/
-
+/build/
+/bin/
 
 /.springBeans
+/.gradle/

@@ -23,22 +23,30 @@ dependencyManagement {
 }
 
 jar {
-    baseName = 'spring-eureka'
+    baseName = 'spring-cloud-web'
     version =  '0.0.1'
 }
 
 repositories {
-    mavenCentral()
+	mavenLocal()
+    mavenCentral()    
 }
 
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
 dependencies {
-    compile 'org.springframework.cloud:spring-cloud-starter-eureka-server'
-    compile 'org.springframework.boot:spring-boot-starter-security'   
-    compile 'org.springframework.cloud:spring-cloud-starter-hystrix-dashboard' 
+	compile project(':cloud-model')
+    compile 'org.springframework.cloud:spring-cloud-starter-eureka'
+    compile 'org.springframework.cloud:spring-cloud-starter-config'
+    compile 'org.springframework.cloud:spring-cloud-starter-bus-amqp'
+    compile 'org.springframework.cloud:spring-cloud-starter-hystrix' 
+    compile 'org.springframework.cloud:spring-cloud-starter-zuul'
+    compile 'org.springframework.boot:spring-boot-starter-actuator'
     testCompile("org.springframework.boot:spring-boot-starter-test") {
         exclude module: "commons-logging"
     }
+    testCompile 'org.assertj:assertj-core:2.5.0'
+    testCompile 'org.seleniumhq.selenium:selenium-java:2.53.1'
+  
 }
