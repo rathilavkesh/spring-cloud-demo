@@ -1,0 +1,41 @@
+// using below to enable remote debugging
+def isDebug = false
+def isLocal = false
+def debugPort = 5888
+def appPort = 8888
+def manPort = 9888
+def eurekaPort = 8761
+
+bootRun.doFirst {
+	systemProperties System.properties	
+    if(isDebug) {
+        println 'Running in debug mode...'
+        jvmArgs = ['-Xmx256m', '-Xms256m', '-Xdebug', "-Xrunjdwp:server=y,transport=dt_socket,address=$debugPort,suspend=y"]
+    }else{
+    	jvmArgs = ['-Xmx256m', '-Xms256m']
+    }
+}
+
+task debug {
+	doLast {
+    	description = 'Runs spring boot app in debug mode'
+   		isDebug = true
+    }
+}
+
+bootRun.mustRunAfter debug
+
+// using below to enable run application using local config
+task local {
+	doLast {
+	 	println 'Running in local config...'
+	 	System.setProperty "APP_PORT", "$appPort"
+	 	System.setProperty "MANGEMENT_PORT", "$manPort"
+	    System.setProperty "EUREKA_SERVER_URL", "http://test-eureka:test-password@localhost:$eurekaPort/eureka"
+	    System.setProperty "STATIC_RESOURCE_LOCATION", "file:///C:/Spring Cloud/Static Location/resources/"
+	    System.setProperty "spring.profiles.active", "web,services"	    
+	 	isLocal = true
+ 	}	
+}
+
+bootRun.mustRunAfter local

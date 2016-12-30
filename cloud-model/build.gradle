@@ -27,6 +27,7 @@ jar {
     baseName = 'cloud-model'
     version =  '0.0.1'
 }
+bootRepackage.enabled = false
 
 repositories {
     mavenCentral()

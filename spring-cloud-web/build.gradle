@@ -50,3 +50,6 @@ dependencies {
     testCompile 'org.seleniumhq.selenium:selenium-java:2.53.1'
   
 }
+
+// application config task
+apply from: 'config.gradle'

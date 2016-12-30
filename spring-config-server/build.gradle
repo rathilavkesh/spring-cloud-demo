@@ -42,3 +42,6 @@ dependencies {
         exclude module: "commons-logging"
     }
 }
+
+// application config task
+apply from: 'config.gradle'

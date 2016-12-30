@@ -1,7 +1,4 @@
 target/**
-*.jar
-*.war
-*.ear
 *.class
 *.log
 
