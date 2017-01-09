@@ -23,6 +23,7 @@ dependencyManagement {
 }
 
 jar {
+    archiveName = 'spring-config-server.jar'
     baseName = 'spring-config-server'
     version =  '0.0.1'    
 }

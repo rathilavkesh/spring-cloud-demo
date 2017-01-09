@@ -1,0 +1,35 @@
+version: '2'
+services:
+  rabbitmq:
+    image: rabbitmq:3-management
+    restart: always
+    ports:
+      - "15672:15672"
+    logging:
+      options:
+        max-size: "10m"
+        max-file: "10"
+
+  server-registry:
+    image: lavkesh/server-registry:1.0
+    restart: always
+    ports:
+      - "8761:8761"
+    logging:
+      options:
+        max-size: "10m"
+        max-file: "10"
+
+  config-server:
+    image: lavkesh/config-server:1.0
+    restart: always
+    ports:
+      - "8888:8888"
+      - "9080:9080"
+    environment:
+      - RABBITMQ_IP=rabbitmq
+      - SERVER_REGISTRY_IP=server-registry
+    logging:
+      options:
+        max-size: "10m"
+        max-file: "10"

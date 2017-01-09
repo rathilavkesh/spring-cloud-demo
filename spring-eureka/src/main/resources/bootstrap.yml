@@ -1,5 +1,5 @@
 server:
-  port: ${APP_PORT:8762}
+  port: 8761
   context-path: /eureka
 
 spring:
@@ -12,7 +12,7 @@ eureka:
     fetchRegistry: false
   server:
     waitTimeInMsWhenSyncEmpty: 0
-    
+
 security:
   basic:
     enabled: true

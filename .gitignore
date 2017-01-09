@@ -1,0 +1,15 @@
+target/**
+*.class
+*.log
+
+# eclipse specific git ignore
+.classpath
+.project
+.metadata
+.idea
+.loadpath
+.mvn/
+
+/.springBeans
+/.gradle/
+.idea
