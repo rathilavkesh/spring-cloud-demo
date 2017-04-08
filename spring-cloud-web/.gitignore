@@ -1,6 +1,7 @@
 target/**
 *.class
 *.log
+*.iml
 
 # eclipse specific git ignore
 .classpath
@@ -9,6 +10,7 @@ target/**
 .settings/
 .loadpath
 .mvn/
+.idea/
 /build/
 /bin/
 
